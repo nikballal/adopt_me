@@ -2904,61 +2904,70 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDom = require("react-dom");
 var _reactRouterDom = require("react-router-dom");
 var _react = require("react");
-var _searchParams = require("./SearchParams");
-var _searchParamsDefault = parcelHelpers.interopDefault(_searchParams);
-var _details = require("./Details");
-var _detailsDefault = parcelHelpers.interopDefault(_details);
 var _themeContext = require("./ThemeContext");
 var _themeContextDefault = parcelHelpers.interopDefault(_themeContext);
 var _s = $RefreshSig$();
+const Details = /*#__PURE__*/ (0, _react.lazy)(_c = ()=>require("54942dbb0bbe2d02"));
+_c1 = Details;
+const SearchParams = /*#__PURE__*/ (0, _react.lazy)(_c2 = ()=>require("bee04ed21e494ea7"));
+_c3 = SearchParams;
 const App = ()=>{
     _s();
     const theme = (0, _react.useState)("darkblue");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _themeContextDefault.default).Provider, {
-            value: theme,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/",
-                            children: "Adopt Me!"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+            fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "loading, be patient"
+            }, void 0, false, void 0, void 0),
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _themeContextDefault.default).Provider, {
+                value: theme,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: "Adopt Me!"
+                            }, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 14,
+                                columnNumber: 15
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 13,
                             columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/details/:id",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Details, {}, void 0, false, void 0, void 0)
+                                }, void 0, false, {
+                                    fileName: "src/App.js",
+                                    lineNumber: 17,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                    path: "/",
+                                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SearchParams, {}, void 0, false, void 0, void 0)
+                                }, void 0, false, {
+                                    fileName: "src/App.js",
+                                    lineNumber: 18,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/App.js",
+                            lineNumber: 16,
+                            columnNumber: 13
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 12,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                path: "/details/:id",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _detailsDefault.default), {}, void 0, false, void 0, void 0)
-                            }, void 0, false, {
-                                fileName: "src/App.js",
-                                lineNumber: 16,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                path: "/",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchParamsDefault.default), {}, void 0, false, void 0, void 0)
-                            }, void 0, false, {
-                                fileName: "src/App.js",
-                                lineNumber: 17,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.js",
-                        lineNumber: 15,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.js",
+                    lineNumber: 12,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 11,
                 columnNumber: 9
@@ -2975,7 +2984,7 @@ const App = ()=>{
     }, undefined);
 };
 _s(App, "pfe5KIbSWkMUbmuvnyEw3GJEiLI=");
-_c = App;
+_c4 = App;
 // const App = () => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", {}, "Adopt Me!"),
@@ -2998,18 +3007,22 @@ _c = App;
 // };
 (0, _reactDom.render)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 45,
+    lineNumber: 47,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
-var _c;
-$RefreshReg$(_c, "App");
+var _c, _c1, _c2, _c3, _c4;
+$RefreshReg$(_c, "Details$lazy");
+$RefreshReg$(_c1, "Details");
+$RefreshReg$(_c2, "SearchParams$lazy");
+$RefreshReg$(_c3, "SearchParams");
+$RefreshReg$(_c4, "App");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./SearchParams":"gR5jP","react-router-dom":"fdOAw","react":"21dqq","./Details":"aUpxx","./ThemeContext":"4b9qW"}],"j6uA9":[function(require,module,exports) {
+},{"react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react-router-dom":"fdOAw","react":"21dqq","./ThemeContext":"4b9qW","54942dbb0bbe2d02":"dj2kw","bee04ed21e494ea7":"1TvJs"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -24774,437 +24787,7 @@ module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"react":"21dqq","object-assign":"7OXxh"}],"gR5jP":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ff62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ff62.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _useBreedList = require("./useBreedList");
-var _useBreedListDefault = parcelHelpers.interopDefault(_useBreedList);
-var _results = require("./Results");
-var _resultsDefault = parcelHelpers.interopDefault(_results);
-var _themeContext = require("./ThemeContext");
-var _themeContextDefault = parcelHelpers.interopDefault(_themeContext);
-var _s = $RefreshSig$();
-const ANIMALS = [
-    "bird",
-    "cat",
-    "dog",
-    "rabbit",
-    "reptile"
-];
-const SearchParams = ()=>{
-    _s();
-    const [location, setLocation] = (0, _react.useState)("");
-    const [animal, setAnimal] = (0, _react.useState)("");
-    const [breed, setBreed] = (0, _react.useState)("");
-    const [breeds] = (0, _useBreedListDefault.default)(animal); // Now you should have breeds being populated every time you change animal!
-    const [theme, setTheme] = (0, _react.useContext)((0, _themeContextDefault.default));
-    const [pets, setPets] = (0, _react.useState)([]);
-    (0, _react.useEffect)(()=>{
-        requestPets();
-    }, []); //eslint-disable-line react-hooks/exhaustive-deps
-    // [] call this effect again when something happens, [] is either empty or includes dependencies
-    async function requestPets() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`);
-        const json = await res.json();
-        setPets(json.pets);
-    }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "search-params",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                onSubmit: (e)=>{
-                    e.preventDefault();
-                    requestPets();
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "location",
-                        children: [
-                            "Location",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                id: "location",
-                                value: location,
-                                placeholder: "Location",
-                                onChange: (e)=>setLocation(e.target.value)
-                            }, void 0, false, {
-                                fileName: "src/SearchParams.js",
-                                lineNumber: 31,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/SearchParams.js",
-                        lineNumber: 29,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "animal",
-                        children: [
-                            "Animal",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                id: "animal",
-                                value: animal,
-                                onChange: (e)=>{
-                                    setAnimal(e.target.value);
-                                    setBreed("");
-                                },
-                                onBlur: (e)=>{
-                                    setAnimal(e.target.value);
-                                    setBreed("");
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("options", {}, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 42,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    ANIMALS.map((animal)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                            value: animal,
-                                            children: animal
-                                        }, animal, false, {
-                                            fileName: "src/SearchParams.js",
-                                            lineNumber: 43,
-                                            columnNumber: 36
-                                        }, undefined))
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/SearchParams.js",
-                                lineNumber: 35,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/SearchParams.js",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "breed",
-                        children: [
-                            "Breed",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                id: "breed",
-                                value: breed,
-                                onChange: (e)=>{
-                                    setBreed(e.target.value);
-                                },
-                                onBlur: (e)=>{
-                                    setBreed(e.target.value);
-                                },
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("options", {}, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 56,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    breeds.map((allBreed)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                            value: allBreed,
-                                            children: allBreed
-                                        }, allBreed, false, {
-                                            fileName: "src/SearchParams.js",
-                                            lineNumber: 57,
-                                            columnNumber: 37
-                                        }, undefined))
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/SearchParams.js",
-                                lineNumber: 51,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/SearchParams.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        htmlFor: "theme",
-                        children: [
-                            "Theme",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                value: theme,
-                                onChange: (e)=>setTheme(e.target.value),
-                                onBlur: (e)=>setTheme(e.target.value),
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "peru",
-                                        children: "Peru"
-                                    }, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 65,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "darkblue",
-                                        children: "DarkBlue"
-                                    }, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 66,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "red",
-                                        children: "Red"
-                                    }, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 67,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "orange",
-                                        children: "Orange"
-                                    }, void 0, false, {
-                                        fileName: "src/SearchParams.js",
-                                        lineNumber: 68,
-                                        columnNumber: 13
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/SearchParams.js",
-                                lineNumber: 64,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/SearchParams.js",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        style: {
-                            backgroundColor: theme
-                        },
-                        children: "Submit"
-                    }, void 0, false, {
-                        fileName: "src/SearchParams.js",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/SearchParams.js",
-                lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resultsDefault.default), {
-                pets: pets
-            }, void 0, false, {
-                fileName: "src/SearchParams.js",
-                lineNumber: 76,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/SearchParams.js",
-        lineNumber: 24,
-        columnNumber: 10
-    }, undefined);
-};
-_s(SearchParams, "uT04QqN7mHRbRsxIXtKpp8rLP1w=", false, function() {
-    return [
-        (0, _useBreedListDefault.default)
-    ];
-});
-_c = SearchParams;
-exports.default = SearchParams;
-var _c;
-$RefreshReg$(_c, "SearchParams");
-
-  $parcel$ReactRefreshHelpers$ff62.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./useBreedList":"9NpcM","./Results":"6w7nu","./ThemeContext":"4b9qW"}],"9NpcM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2adc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2adc.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-//building a custom hook
-var _react = require("react");
-var _s = $RefreshSig$();
-const localCache = {};
-function useBreedList(animal) {
-    _s();
-    const [breedList, setBreedList] = (0, _react.useState)([]);
-    const [status, setStatus] = (0, _react.useState)("unloaded");
-    (0, _react.useDebugValue)("number of values in cache:" + Object.keys(localCache).length);
-    (0, _react.useEffect)(()=>{
-        if (!animal) setBreedList([]);
-        else if (localCache[animal]) setBreedList(localCache[animal]);
-        else requestBreedList();
-        async function requestBreedList() {
-            setBreedList([]);
-            setStatus("loading");
-            const res = await fetch(`http://pets-v2.dev-apis.com/breeds?animal=${animal}`);
-            const json = await res.json();
-            localCache[animal] = json.breeds || [];
-            setBreedList(localCache[animal]);
-            setStatus("loaded");
-        }
-    }, [
-        animal
-    ]); //any change to animal, useEffect runs again
-    return [
-        breedList,
-        status
-    ];
-}
-exports.default = useBreedList;
-_s(useBreedList, "UXfoMn6jYxjMddBc6kz5SZ9mUD4=");
-
-  $parcel$ReactRefreshHelpers$2adc.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6w7nu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$36c4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$36c4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _pet = require("./Pet");
-var _petDefault = parcelHelpers.interopDefault(_pet);
-const Results = ({ pets  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: !pets.length ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "No pets found"
-        }, void 0, false, {
-            fileName: "src/Results.js",
-            lineNumber: 6,
-            columnNumber: 23
-        }, undefined) : pets.map((pet)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _petDefault.default), {
-                name: pet.name,
-                animal: pet.animal,
-                breed: pet.breed,
-                images: pet.images,
-                location: `${pet.city}, ${pet.state}`,
-                id: pet.id
-            }, pet.id, false, {
-                fileName: "src/Results.js",
-                lineNumber: 6,
-                columnNumber: 64
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/Results.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Results;
-exports.default = Results;
-var _c;
-$RefreshReg$(_c, "Results");
-
-  $parcel$ReactRefreshHelpers$36c4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./Pet":"98zmG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"98zmG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$acd4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$acd4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-const Pet = ({ name , animal , breed , images , location , id  })=>{
-    let hero = "http://pet-images.dev-apis.com/pets/none.jpg";
-    if (images.length) hero = images[0];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-        to: `/details/${id}`,
-        className: "pet",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "image-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: hero,
-                    alt: name
-                }, void 0, false, {
-                    fileName: "src/Pet.js",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "info",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: name
-                    }, void 0, false, {
-                        fileName: "src/Pet.js",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: [
-                            animal,
-                            " - ",
-                            breed,
-                            " - ",
-                            location
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Pet.js",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Pet.js",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Pet.js",
-        lineNumber: 14,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Pet;
-// const Pet = (props) => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, props.name),
-//     React.createElement("h2", {}, props.animal),
-//     React.createElement("h2", {}, props.breed),
-//   ]);
-// };
-exports.default = Pet;
-var _c;
-$RefreshReg$(_c, "Pet");
-
-  $parcel$ReactRefreshHelpers$acd4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"fdOAw"}],"fdOAw":[function(require,module,exports) {
+},{"react":"21dqq","object-assign":"7OXxh"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>(0, _reactRouter.MemoryRouter));
@@ -26931,434 +26514,114 @@ exports.default = ThemeContext;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aUpxx":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0da2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0da2.prelude(module);
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dj2kw":[function(require,module,exports) {
+module.exports = require("./helpers/browser/js-loader")(require("./helpers/bundle-url").getBundleURL("aXMci") + "Details.d4b0aff3.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("aUpxx"));
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _carousel = require("./Carousel");
-var _carouselDefault = parcelHelpers.interopDefault(_carousel);
-var _errorBoundary = require("./ErrorBoundary");
-var _errorBoundaryDefault = parcelHelpers.interopDefault(_errorBoundary);
-var _modal = require("./Modal");
-var _modalDefault = parcelHelpers.interopDefault(_modal);
-var _themeContext = require("./ThemeContext");
-var _themeContextDefault = parcelHelpers.interopDefault(_themeContext);
-var _s = $RefreshSig$();
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-class Details extends (0, _react.Component) {
-    constructor(...args){
-        super(...args);
-        _defineProperty(this, "state", {
-            loading: true,
-            showModal: false
-        });
-        _defineProperty(this, "toggleModal", ()=>this.setState({
-                showModal: !this.state.showModal
-            }));
-    }
-    async componentDidMount() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`);
-        const json = await res.json();
-        this.setState(Object.assign({
-            loading: false
-        }, json.pets[0])); //can use ...json.pets[0] instead of Object.assign
-    }
-    //https://reactjs.org/docs/react-component.html#setstate    //toggles the showModal to 'true'
-    render() {
-        if (this.state.loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "loading ..."
-        }, void 0, false, {
-            fileName: "src/Details.js",
-            lineNumber: 31,
-            columnNumber: 14
-        }, this);
-        // throw new Error("lmao you crashed");
-        const { animal , breed , city , state , description , name , images , showModal  } = this.state;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            onClick: (e)=>console.log(e),
-            className: "details",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
-                    images: images
-                }, void 0, false, {
-                    fileName: "src/Details.js",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: name
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: [
-                                animal,
-                                " - ",
-                                breed,
-                                " - ",
-                                city,
-                                ", ",
-                                state
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Details.js",
-                            lineNumber: 50,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _themeContextDefault.default).Consumer, {
-                            children: ([theme])=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: this.toggleModal,
-                                    style: {
-                                        backgroundColor: theme
-                                    },
-                                    children: [
-                                        "Adopt ",
-                                        name
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Details.js",
-                                    lineNumber: 55,
-                                    columnNumber: 27
-                                }, this)
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 54,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: description
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 64,
-                            columnNumber: 11
-                        }, this),
-                        showModal ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDefault.default), {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: [
-                                            "Would you like to adopt name ",
-                                            name,
-                                            "?"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Details.js",
-                                        lineNumber: 67,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "buttons",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                href: "https://bit.ly/pet-adopt",
-                                                children: "Yes"
-                                            }, void 0, false, {
-                                                fileName: "src/Details.js",
-                                                lineNumber: 69,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                onClick: this.toggleModal,
-                                                children: "No"
-                                            }, void 0, false, {
-                                                fileName: "src/Details.js",
-                                                lineNumber: 70,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/Details.js",
-                                        lineNumber: 68,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Details.js",
-                                lineNumber: 66,
-                                columnNumber: 15
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "src/Details.js",
-                            lineNumber: 65,
-                            columnNumber: 24
-                        }, this) : null
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Details.js",
-                    lineNumber: 48,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Details.js",
-            lineNumber: 46,
-            columnNumber: 12
-        }, this);
-    }
-}
-//to access the API route, we need the 'id' params from the route which is from react-router, so we use 'useParams' to get the 'id', since we cant use 'hooks' in class components
-const WrappedDetails = ()=>{
-    _s();
-    const params = (0, _reactRouterDom.useParams)();
-    // const [theme] = useContext(ThemeContext), pass 'theme' props in details
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorBoundaryDefault.default), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Details, {
-            params: params
-        }, void 0, false, {
-            fileName: "src/Details.js",
-            lineNumber: 85,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Details.js",
-        lineNumber: 84,
-        columnNumber: 10
-    }, undefined);
-};
-_s(WrappedDetails, "+jVsTcECDRo3yq2d7EQxlN9Ixog=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams)
-    ];
-});
-_c = WrappedDetails;
-exports.default = WrappedDetails;
-var _c;
-$RefreshReg$(_c, "WrappedDetails");
-
-  $parcel$ReactRefreshHelpers$0da2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react/jsx-dev-runtime":"iTorj","./Carousel":"1lXBA","./ErrorBoundary":"dNDjy","./ThemeContext":"4b9qW","./Modal":"FKuaN"}],"1lXBA":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9e23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9e23.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-class Carousel extends (0, _react.Component) {
-    constructor(...args){
-        super(...args);
-        _defineProperty(this, "state", {
-            active: 0 //show the first photo
-        });
-        _defineProperty(this, "handleIndexClick", (event)=>{
-            this.setState({
-                active: +event.target.dataset.index //+ converts string to the number
-            });
-        });
-    }
-    render() {
-        const { active  } = this.state;
-        const { images  } = this.props;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "carousel",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: images[active],
-                    alt: "animal"
-                }, void 0, false, {
-                    fileName: "src/Carousel.js",
-                    lineNumber: 24,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "carousel-smaller",
-                    children: images.map((photo, index)=>//eslint-disable-next-line
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            onClick: this.handleIndexClick,
-                            src: photo,
-                            "data-index": index,
-                            className: index === active ? "active" : "",
-                            alt: "animal thumbnail"
-                        }, photo, false, {
-                            fileName: "src/Carousel.js",
-                            lineNumber: 28,
-                            columnNumber: 9
-                        }, this))
-                }, void 0, false, {
-                    fileName: "src/Carousel.js",
-                    lineNumber: 25,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Carousel.js",
-            lineNumber: 23,
-            columnNumber: 12
-        }, this);
-    }
-}
-_defineProperty(Carousel, "defaultProps", {
-    images: [
-        "http://pets-images.dev-apis.com/pets/none.jpg"
-    ]
-});
-exports.default = Carousel;
-
-  $parcel$ReactRefreshHelpers$9e23.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dNDjy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c6cd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c6cd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-function _defineProperty(obj, key, value) {
-    if (key in obj) Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-    });
-    else obj[key] = value;
-    return obj;
-}
-//Error Boundary has to be done using class component only
-class ErrorBoundary extends (0, _react.Component) {
-    constructor(...args){
-        super(...args);
-        _defineProperty(this, "state", {
-            hasError: false,
-            redirect: false
-        });
-    }
-    static getDerivedStateFromError() {
-        return {
-            hasError: true
+},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("../cacheLoader");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
         };
-    }
-    componentDidCatch(error, info) {
-        console.error(error, info);
-    }
-    //equivalent to useEffect in function components
-    componentDidUpdate() {
-        if (this.state.hasError) setTimeout(()=>this.setState({
-                redirect: true
-            }), 5000);
-    }
-    render() {
-        if (this.state.redirect) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Navigate), {
-            to: "/"
-        }, void 0, false, {
-            fileName: "src/ErrorBoundary.js",
-            lineNumber: 34,
-            columnNumber: 14
-        }, this);
-        else if (this.state.hasError) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: [
-                "There was an error.",
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    to: "/",
-                    children: "Click here"
-                }, void 0, false, {
-                    fileName: "src/ErrorBoundary.js",
-                    lineNumber: 38,
-                    columnNumber: 11
-                }, this),
-                " to go back to the homepage. Or wait five seconds and we will do it for you."
-            ]
-        }, void 0, true, {
-            fileName: "src/ErrorBoundary.js",
-            lineNumber: 36,
-            columnNumber: 14
-        }, this);
-        return this.props.children;
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"../cacheLoader":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
     }
 }
-exports.default = ErrorBoundary;
-
-  $parcel$ReactRefreshHelpers$c6cd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"FKuaN":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7f78 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7f78.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDom = require("react-dom");
-var _s = $RefreshSig$();
-const Modal = ({ children  })=>{
-    _s();
-    const elRef = (0, _react.useRef)(null);
-    if (!elRef.current) elRef.current = document.createElement("div"); //elRef can onyl modify current, can only in the context of elRef.current
-    (0, _react.useEffect)(()=>{
-        const modalRoot = document.getElementById("modal"); //creating a place for the modal to render, which is later destroyed (created in index.html)
-        modalRoot.appendChild(elRef.current);
-        return ()=>modalRoot.removeChild(elRef.current); //have to remove the DOM element, otherwise it'll keep re-rendering
-    }, []);
-    return /*#__PURE__*/ (0, _reactDom.createPortal)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: children
-    }, void 0, false, {
-        fileName: "src/Modal.js",
-        lineNumber: 16,
-        columnNumber: 23
-    }, undefined), elRef.current);
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
 };
-_s(Modal, "uS4DrwVCzH44ayWi2jMWCV+OL1E=");
-_c = Modal;
-exports.default = Modal;
-var _c;
-$RefreshReg$(_c, "Modal");
 
-  $parcel$ReactRefreshHelpers$7f78.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
+},{}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","7Zeie","2kQhy"], "2kQhy", "parcelRequireb10b")
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"1TvJs":[function(require,module,exports) {
+module.exports = require("./helpers/browser/js-loader")(require("./helpers/bundle-url").getBundleURL("aXMci") + "SearchParams.2459eb72.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("gR5jP"));
+
+},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}]},["1xC6H","7Zeie","2kQhy"], "2kQhy", "parcelRequireb10b")
 
 //# sourceMappingURL=index.7271efb6.js.map
